@@ -6,7 +6,16 @@ Functions development on the notebook were to get central tendency values and al
 ### Get central measures
 Function that returns a dataframe with these measures based on a qualitative variable.
 
+```mermaid
+flowchart LR
 
+S[Start]
+V[Creates a dataframe with variables]
+DF[Creates a new dataframe with central measures]
+R[Dataframe with central measures ordered]
+
+S ---> V ---> DF --->|returns| R
+```
 
 ### Get frequency table
 Modify a dataframe to get absolute and relative frequencies and also accumulated values.
