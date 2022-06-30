@@ -11,17 +11,25 @@ flowchart LR
 S[Start]
 A[Absolute frequency]
 R[Relative frequency]
-A{Accumulated frequency}
+AD{Accumulated frequency}
 S1[Sum each value to get Accum-absolute]
 S2[Sum each value to get Accum-relative]
 NR[Create a new column with accumulated absolute frequency]
 NA[Create a new column with accumulated relative frequency]
 
+%% Colores %%
+	classDef blue  fill:#2374f7, stroke:#000, stroke-width:2px, color:#fff
+	classDef pink  fill:#eb3dd6,stroke:#000, stroke-width:2px, color:#fff
+	classDef orange  fill:#fc822b,stroke:#000,stroke-width:2px,color:#fff
+	classDef red  fill:#ed2633,stroke:#000,stroke-width:2px,color:#fff
+	classDef green  fill:#16b522,stroke:#000,stroke-width:2px,color:#fff
+
+S ---> A ---> R ---> AD
+AD --->|one| S1
+AD --->|second| S2
+S1 ---> NR
+S2 ---> NA
 ```
-
-
-
-<img src="https://i.imgur.com/SZ8Dsrh.jpg"> 
 
 ### Get frequency table
 Modify a dataframe to get absolute and relative frequencies and also accumulated values.
