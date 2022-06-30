@@ -5,6 +5,22 @@ Functions development on the notebook were to get central tendency values and al
 
 ### Get central measures
 Function that returns a dataframe with these measures based on a qualitative variable.
+
+```mermaid
+flowchart LR
+S[Start]
+A[Absolute frequency]
+R[Relative frequency]
+A{Accumulated frequency}
+S1[Sum each value to get Accum-absolute]
+S2[Sum each value to get Accum-relative]
+NR[Create a new column with accumulated absolute frequency]
+NA[Create a new column with accumulated relative frequency]
+
+```
+
+
+
 <img src="https://i.imgur.com/SZ8Dsrh.jpg"> 
 
 ### Get frequency table
